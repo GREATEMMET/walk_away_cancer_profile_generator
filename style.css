@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root{
+    --background:white;
+    --medicaidBlue:lightskyblue;
+    --medicaidRed:red;
+}
+
+body {
+  background-color: var(--background);
+  padding: 1%;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 10px;
+  min-height: 100vh;
+}
+
+.leftContainer {
+  flex: 2;
+  border-right: .5px solid var(--medicaidBlue);
+}
+
+.rightContainer {
+  flex: 5;
+}
+
+.rightHeading{
+    color: var(--medicaidBlue);
+}
