@@ -5,10 +5,11 @@
   box-sizing: border-box;
 }
 
-:root{
-    --background:white;
-    --medicaidBlue:lightskyblue;
-    --medicaidRed:red;
+:root {
+  --background: white;
+  --medicaidBlue: lightskyblue;
+  --medicaidRed: red;
+  --btnPadding: 10px 15px;
 }
 
 body {
@@ -18,19 +19,93 @@ body {
 
 .mainContainer {
   display: flex;
+  align-items: flex-start;
   gap: 10px;
   min-height: 100vh;
 }
 
 .leftContainer {
   flex: 2;
-  border-right: .5px solid var(--medicaidBlue);
+  border-right: 0.5px solid var(--medicaidBlue);
+  min-height: inherit;
+}
+
+.leftHeading {
+  color: var(--medicaidRed);
+  text-align: center;
+  margin-block: 50px 100px;
+}
+
+.dummyCertImage {
+  width: 90%;
+  display: block;
+  margin: auto !important;
 }
 
 .rightContainer {
   flex: 5;
+  padding: 10px;
 }
 
-.rightHeading{
-    color: var(--medicaidBlue);
+.profileGenerator {
+  border-bottom: 1px solid var(--medicaidBlue);
+}
+
+.rightHeading {
+  color: var(--medicaidBlue);
+  margin-block: 25px 10px;
+}
+
+.infoField {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5% 10%;
+  gap: 20px;
+}
+
+input.firstname,
+input.lastname {
+  height: 50px;
+  border-radius: 12px;
+  padding-left: 40px;
+  font-size: 16px;
+}
+
+input.imgUpload {
+  align-self: center;
+  width: 400px;
+}
+
+input.imgUpload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+input.imgUpload::before {
+  content: "Select a Profile Image";
+  background-color: var(--medicaidRed);
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: var(--background);
+  white-space: nowrap;
+
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.generateBtn {
+  background-color: var(--medicaidBlue);
+  padding: var(--btnPadding);
+  border: none;
+  border-radius: 10px;
+  color: var(--background);
+  margin-bottom: 25px;
+}
+
+
+
+.personProfileFrame{
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    margin-block: 20px 0;
 }
