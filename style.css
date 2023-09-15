@@ -3,18 +3,21 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
 :root {
   --background: white;
   --medicaidBlue: lightskyblue;
+  --medicaidBlueDarker: rgb(111, 197, 250);
+  --medicaidGrey: grey;
   --medicaidRed: red;
   --btnPadding: 10px 15px;
+
 }
 
 body {
   background-color: var(--background);
-  padding: 1%;
 }
 
 .mainContainer {
@@ -28,6 +31,8 @@ body {
   flex: 2;
   border-right: 0.5px solid var(--medicaidBlue);
   min-height: inherit;
+  position: sticky;
+  top: 0;
 }
 
 .leftHeading {
@@ -101,11 +106,52 @@ input.imgUpload::before {
   margin-bottom: 25px;
 }
 
+.generateBtn:hover {
+  background-color: var(--medicaidBlueDarker);
+}
 
+.personProfileFrame {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+  margin-block: 20px 0;
+}
 
-.personProfileFrame{
-    max-width: 80%;
-    display: block;
-    margin: auto;
-    margin-block: 20px 0;
+.downloadAndShare {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.profileDownloadBtn {
+  width: 50%;
+  margin: 0 auto 25px;
+  padding-block: 8px;
+  border-radius: 12px;
+  border: none;
+  background: var(--medicaidGrey);
+  transition: all 100ms linear;
+}
+
+.profileDownloadBtn:hover{
+  color: white;
+  transform: scale(1.1);
+}
+
+.shareIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shareIcon {
+  width: 25px;
+  transition: all 100ms linear;
+}
+
+.shareIcon:hover {
+  transform: scale(1.2);
 }
