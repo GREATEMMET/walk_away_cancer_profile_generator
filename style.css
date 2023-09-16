@@ -3,17 +3,16 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'Inclusive Sans', sans-serif;
+  font-family: "Inclusive Sans", sans-serif;
 }
 
 :root {
   --background: white;
   --medicaidBlue: lightskyblue;
-  --medicaidBlueDarker: rgb(111, 197, 250);
+  --medicaidBlueDarker: rgb(89, 191, 255);
   --medicaidGrey: grey;
   --medicaidRed: red;
-  --btnPadding: 10px 15px;
-
+  --btnPadding: 8px 15px;
 }
 
 body {
@@ -44,7 +43,7 @@ body {
 .dummyCertImage {
   width: 90%;
   display: block;
-  margin: auto !important;
+  margin: auto;
 }
 
 .rightContainer {
@@ -64,7 +63,7 @@ body {
 .infoField {
   display: flex;
   flex-direction: column;
-  padding: 2.5% 10%;
+  padding: 2.5% 5%;
   gap: 20px;
 }
 
@@ -84,6 +83,7 @@ input.imgUpload {
 input.imgUpload::-webkit-file-upload-button {
   visibility: hidden;
 }
+
 input.imgUpload::before {
   content: "Select a Profile Image";
   background-color: var(--medicaidRed);
@@ -92,7 +92,6 @@ input.imgUpload::before {
   border-radius: 10px;
   color: var(--background);
   white-space: nowrap;
-
   cursor: pointer;
   font-weight: 700;
 }
@@ -104,10 +103,13 @@ input.imgUpload::before {
   border-radius: 10px;
   color: var(--background);
   margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 50ms linear;
 }
 
 .generateBtn:hover {
   background-color: var(--medicaidBlueDarker);
+  transform: scale(1.02);
 }
 
 .personProfileFrame {
@@ -121,8 +123,7 @@ input.imgUpload::before {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: auto;
-  margin-top: 50px;
+  margin: 50px auto 0;
 }
 
 .profileDownloadBtn {
@@ -132,10 +133,11 @@ input.imgUpload::before {
   border-radius: 12px;
   border: none;
   background: var(--medicaidGrey);
+  cursor: pointer;
   transition: all 100ms linear;
 }
 
-.profileDownloadBtn:hover{
+.profileDownloadBtn:hover {
   color: white;
   transform: scale(1.1);
 }
@@ -155,3 +157,4 @@ input.imgUpload::before {
 .shareIcon:hover {
   transform: scale(1.2);
 }
+
