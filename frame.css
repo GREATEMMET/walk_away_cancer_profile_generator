@@ -1,0 +1,51 @@
+.personProfileFrame {
+  position: relative;
+}
+
+.nameTagContainer {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -13%);
+  z-index: 4;
+  width: 70%;
+}
+
+.nameTag {
+  max-width: 100%;
+}
+
+.personFullName {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  font-size: 2rem;
+  word-spacing: 15px;
+  letter-spacing: 10px;
+  max-width: 75%;
+  width: 75%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profilePic {
+  position: absolute;
+  top: 36.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52%;
+  height: 49.5%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media print {
+  .personName {
+    font-size: 120%;
+    color: white;
+  }
+}
