@@ -34,10 +34,16 @@ body {
   top: 0;
 }
 
+
+.title{
+  color: var(--medicaidBlue);
+  text-align: center;
+  margin-block: 50px 10px;
+}
 .leftHeading {
   color: var(--medicaidRed);
   text-align: center;
-  margin-block: 50px 100px;
+  margin-block: 50px 50px;
 }
 
 .dummyCertImage {
