@@ -7,9 +7,10 @@
 }
 
 :root {
-  --background: white;
+  --background: rgb(255, 248, 240);
   --medicaidBlue: lightskyblue;
   --medicaidBlueDarker: rgb(89, 191, 255);
+  --medicaidDeepBlue: #294784;
   --medicaidGrey: grey;
   --medicaidRed: red;
   --btnPadding: 8px 15px;
@@ -34,8 +35,7 @@ body {
   top: 0;
 }
 
-
-.title{
+.title {
   color: var(--medicaidBlue);
   text-align: center;
   margin-block: 50px 10px;
@@ -44,6 +44,7 @@ body {
   color: var(--medicaidRed);
   text-align: center;
   margin-block: 50px 50px;
+  font-size: 25px;
 }
 
 .dummyCertImage {
@@ -62,8 +63,9 @@ body {
 }
 
 .rightHeading {
-  color: var(--medicaidBlue);
+  color: var(--medicaidDeepBlue);
   margin-block: 25px 10px;
+  font-size: 30px;
 }
 
 .infoField {
@@ -79,6 +81,7 @@ input.lastname {
   border-radius: 12px;
   padding-left: 40px;
   font-size: 16px;
+  border: none;
 }
 
 input.imgUpload {
@@ -163,4 +166,3 @@ input.imgUpload::before {
 .shareIcon:hover {
   transform: scale(1.2);
 }
-
