@@ -49,3 +49,9 @@
     color: white;
   }
 }
+
+@media screen and (max-width:800px) {
+    .personFullName{
+        font-size: .6rem;
+    }
+}
